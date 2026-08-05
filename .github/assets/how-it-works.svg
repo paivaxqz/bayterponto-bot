@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 180" fill="none">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="520" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="100%" stop-color="#111"/>
+    </linearGradient>
+  </defs>
+  <rect width="520" height="180" rx="14" fill="url(#bg2)"/>
+  <rect x="0.5" y="0.5" width="519" height="179" rx="13.5" stroke="#222"/>
+  <text x="260" y="28" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#555" text-anchor="middle" letter-spacing="1.5">COMO FUNCIONA</text>
+  <!-- Step 1: Clock -->
+  <rect x="30" y="50" width="120" height="90" rx="10" fill="#5865F210" stroke="#5865F240"/>
+  <circle cx="90" cy="82" r="14" stroke="#5865F2" stroke-width="2" fill="none"/>
+  <line x1="90" y1="72" x2="90" y2="82" stroke="#5865F2" stroke-width="2" stroke-linecap="round"/>
+  <line x1="90" y1="82" x2="98" y2="82" stroke="#5865F2" stroke-width="2" stroke-linecap="round"/>
+  <text x="90" y="118" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#ccc" text-anchor="middle">18:00 BRT</text>
+  <text x="90" y="132" font-family="system-ui,sans-serif" font-size="9" fill="#666" text-anchor="middle">alarme dispara</text>
+  <!-- Arrow 1 -->
+  <line x1="155" y1="95" x2="185" y2="95" stroke="#333" stroke-width="1.5"/>
+  <polygon points="185,90 195,95 185,100" fill="#444"/>
+  <!-- Step 2: Typing -->
+  <rect x="200" y="50" width="120" height="90" rx="10" fill="#FF6D0010" stroke="#FF6D0040"/>
+  <rect x="240" y="75" width="40" height="18" rx="9" fill="#FF6D0030"/>
+  <circle cx="250" cy="84" r="3" fill="#FF6D00" opacity="0.8"/>
+  <circle cx="260" cy="84" r="3" fill="#FF6D00" opacity="0.5"/>
+  <circle cx="270" cy="84" r="3" fill="#FF6D00" opacity="0.3"/>
+  <text x="260" y="118" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#ccc" text-anchor="middle">simula typing</text>
+  <text x="260" y="132" font-family="system-ui,sans-serif" font-size="9" fill="#666" text-anchor="middle">jitter + delay</text>
+  <!-- Arrow 2 -->
+  <line x1="325" y1="95" x2="355" y2="95" stroke="#333" stroke-width="1.5"/>
+  <polygon points="355,90 365,95 355,100" fill="#444"/>
+  <!-- Step 3: Send -->
+  <rect x="370" y="50" width="120" height="90" rx="10" fill="#00C85310" stroke="#00C85340"/>
+  <rect x="405" y="72" width="50" height="8" rx="2" fill="#00C85360"/>
+  <rect x="405" y="84" width="35" height="8" rx="2" fill="#00C85340"/>
+  <text x="430" y="118" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#ccc" text-anchor="middle">msg enviada</text>
+  <text x="430" y="132" font-family="system-ui,sans-serif" font-size="9" fill="#666" text-anchor="middle">anti-deteccao</text>
+  <!-- bottom line -->
+  <line x1="30" y1="160" x2="490" y2="160" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="260" y="173" font-family="system-ui,sans-serif" font-size="9" fill="#444" text-anchor="middle">loop a cada 15s  ·  stdlib only  ·  ~20MB RAM</text>
+</svg>
